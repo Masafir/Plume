@@ -1,0 +1,8 @@
+/build/
+/dist/
+*.user
+*.log
+/*.mp4
+/*.csv
+/audit/
+/tools/.formatter/

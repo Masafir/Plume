@@ -1,0 +1,36 @@
+#include <windows.h>
+#include "@CMAKE_CURRENT_SOURCE_DIR@/src/resources/resource.h"
+IDI_PLUME ICON "@CMAKE_CURRENT_SOURCE_DIR@/assets/plume.ico"
+
+1 VERSIONINFO
+FILEVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+PRODUCTVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS VS_FF_PRERELEASE
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE 0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040C04B0"
+    BEGIN
+      VALUE "CompanyName", "Plume contributors\0"
+      VALUE "FileDescription", "Plume - Fond video pour Windows\0"
+      VALUE "FileVersion", "@PROJECT_VERSION@.0\0"
+      VALUE "InternalName", "Plume\0"
+      VALUE "LegalCopyright", "Copyright (c) 2026 Plume contributors - MIT\0"
+#ifdef PLUME_V0
+      VALUE "OriginalFilename", "Plume.exe\0"
+#else
+      VALUE "OriginalFilename", "PlumeWallpaper.exe\0"
+#endif
+      VALUE "ProductName", "Plume\0"
+      VALUE "ProductVersion", "@PROJECT_VERSION@-alpha\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x040C, 1200
+  END
+END

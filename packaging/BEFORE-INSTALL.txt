@@ -1,0 +1,13 @@
+Plume 0.2.0-alpha - Informations avant installation
+
+Plume affiche des vidéos derrière les icônes du bureau. L'installation se fait uniquement dans votre compte Windows, sans droits administrateur. Le démarrage automatique est facultatif.
+
+Cette version est destinée à Windows 11 x64. La lecture nécessite le décodage matériel H.264. L'import de fichiers courants nécessite actuellement une carte NVIDIA compatible CUDA/NVDEC/NVENC. La limite de 50 Mo de RAM n'est pas encore atteinte.
+
+Si FFmpeg manque, une option permet de l'installer via WinGet. En sélectionnant cette option puis en cliquant sur Installer, vous autorisez son téléchargement, son installation dans votre compte et l'acceptation des accords de la source WinGet et du paquet. Cette application tierce est distribuée sous GPLv3 par Gyan/FFmpeg. Elle ne tourne que pendant la préparation et vos vidéos originales sont conservées.
+
+Sources et licences : https://www.gyan.dev/ffmpeg/builds/ et https://ffmpeg.org/legal.html
+
+Vous pouvez décocher cette option : les MP4 déjà compatibles restent lisibles. Si vous n'avez pas Internet ou WinGet, le README explique l'installation manuelle de FFmpeg.
+
+La version actuelle n'est pas signée. Une alerte de réputation Windows est possible. Ne désactivez pas votre antivirus ni Smart App Control pour contourner un blocage. Vérifiez l'origine du fichier et son SHA-256 avant installation.

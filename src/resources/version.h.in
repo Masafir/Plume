@@ -1,0 +1,2 @@
+#pragma once
+#define PLUME_VERSION L"@PROJECT_VERSION@-alpha"
